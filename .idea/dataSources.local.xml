@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="catdata@localhost" uuid="bae58d7e-c61d-4656-8c06-643cd6cf72be">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>cat</user-name>
+      <resolve-scope>catdata:public,cat</resolve-scope>
+    </data-source>
+  </component>
+</project>
