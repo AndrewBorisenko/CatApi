@@ -1,19 +1,54 @@
 package CatApi.controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import CatApi.entity.Cat;
+import CatApi.service.CatService;
 
-@Controller
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.web.bind.annotation.*;
 
-public class CatController
-{
-    @RequestMapping(value = "/getcat", method = RequestMethod.GET)
+
+import java.util.List;
+@ComponentScan("CatApi.service")
+@RestController
+public class CatController {
+
+    @Autowired
+    private CatService service;
+
+
+    @RequestMapping(value = "/cats", method = RequestMethod.GET)
     @ResponseBody
-    public String getReminder(ModelMap model)
+    public List<Cat> getAll()
     {
-        return "MyFirstCATrequest";
+        return service.getAll();
     }
+
+
+    @RequestMapping(value = "/cat/id={id}", method = RequestMethod.GET)
+    @ResponseBody
+    public Cat getByID(@PathVariable("id") long catID)
+    {
+        return service.getByID(catID);
+    }
+
+
+
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    @ResponseBody
+    public Cat save(@RequestBody Cat cat)
+    {
+        return service.save(cat);
+    }
+
+
+
+    @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
+    @ResponseBody
+    public void remove(@PathVariable("id") long catID)
+
+    {
+        service.remove(catID);
+    }
+
 }
