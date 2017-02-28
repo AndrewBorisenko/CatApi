@@ -8,6 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.*;
 
 
+import java.util.Date;
 import java.util.List;
 @ComponentScan("CatApi.service")
 @RestController
@@ -42,6 +43,19 @@ public class CatController {
     }
 
 
+       /* @RequestMapping(value = "/add&name={name}&weight={weight}&date={date}" , method = RequestMethod.POST);
+        @ResponseBody
+        public Cat add(@PathVariable("name") String name , @PathVariable("weight") int weight , @PathVariable("date") Date date )
+        {
+            Cat cat=new Cat();
+            cat.setName(name);
+            cat.setWeight(weight);
+            cat.setDate(date);
+            service.save(cat);
+            return cat;
+        }*/
+
+
 
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
     @ResponseBody
@@ -50,5 +64,7 @@ public class CatController {
     {
         service.remove(catID);
     }
+
+
 
 }

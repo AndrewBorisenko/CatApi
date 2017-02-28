@@ -24,6 +24,7 @@ public class CatServiceImpl implements CatService {
 
     public Cat save(Cat cat)
     {
+
         return repository.saveAndFlush(cat);
     }
 
