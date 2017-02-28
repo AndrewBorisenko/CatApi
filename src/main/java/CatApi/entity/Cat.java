@@ -1,6 +1,7 @@
 package CatApi.entity;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 import org.hibernate.annotations.GenericGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -79,9 +80,14 @@ public class Cat {
     }
 }
 =======
+=======
+>>>>>>> e4985ae0e0f39c2e093ee56d6335f3b2e3f0e161
 /**
  * Created by andre on 25.02.2017.
  */
 public class Cat {
 }
+<<<<<<< HEAD
+>>>>>>> e4985ae0e0f39c2e093ee56d6335f3b2e3f0e161
+=======
 >>>>>>> e4985ae0e0f39c2e093ee56d6335f3b2e3f0e161

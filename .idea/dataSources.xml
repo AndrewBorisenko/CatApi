@@ -2,17 +2,23 @@
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <data-source source="LOCAL" name="reminderdb@localhost" uuid="8104e5ab-0441-4291-bb1f-a272071933db">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/reminderdb</jdbc-url>
 =======
+=======
+>>>>>>> e4985ae0e0f39c2e093ee56d6335f3b2e3f0e161
     <data-source source="LOCAL" name="catdata@localhost" uuid="bae58d7e-c61d-4656-8c06-643cd6cf72be">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/catdata</jdbc-url>
+<<<<<<< HEAD
+>>>>>>> e4985ae0e0f39c2e093ee56d6335f3b2e3f0e161
+=======
 >>>>>>> e4985ae0e0f39c2e093ee56d6335f3b2e3f0e161
     </data-source>
   </component>
